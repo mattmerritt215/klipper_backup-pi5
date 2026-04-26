@@ -3,7 +3,7 @@ log:
 
 streams:
   webcam:
-    - "ffmpeg:device?video=/dev/video0&input_format=mjpeg&video_size=1280x720&framerate=30#video=mjpeg"
+    - "ffmpeg:device?video=/dev/video0&input_format=mjpeg&video_size=1280x720&framerate=30"
 
 webrtc:
   listen: ":8555"
