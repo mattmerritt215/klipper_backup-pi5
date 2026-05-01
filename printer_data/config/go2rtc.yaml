@@ -9,4 +9,5 @@ webrtc:
   listen: ":8555"
 
 api:
+  origin: "*"
   listen: ":1984"
