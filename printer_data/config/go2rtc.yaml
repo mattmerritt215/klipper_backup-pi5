@@ -3,7 +3,7 @@ log:
 
 streams:
   webcam:
-    - "ffmpeg:device?video=/dev/video0&input_format=mjpeg&video_size=1280x720&framerate=30"
+    exec:rpicam-vid --camera 0 --width 1640 --height 1232 -n -t 0 --libav-format h264 -o -
 
 webrtc:
   listen: ":8555"
