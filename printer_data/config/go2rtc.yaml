@@ -3,7 +3,7 @@ log:
 
 streams:
   webcam:
-    exec:rpicam-vid --camera 0 --width 1640 --height 1232 -n -t 0 --codec mjpeg -o -
+    exec:rpicam-vid --camera 0 --width 1280 --height 720 --framerate 15 -n -t 0 --codec mjpeg -o -
 
 webrtc:
   listen: ":8555"
