@@ -3,7 +3,7 @@ log:
 
 streams:
   webcam:
-    exec:rpicam-vid --camera 0 --width 1640 --height 1232 -n -t 0 --libav-format h264 -o -
+    exec:rpicam-vid --camera 0 --width 1640 --height 1232 -n -t 0 --codec yuv420 -o - | ffmpeg -f rawvideo -pix_fmt yuv420p -s 1640x1232 -i - -c:v libx264 -preset ultrafast -tune zerolatency -f h264 -
 
 webrtc:
   listen: ":8555"
